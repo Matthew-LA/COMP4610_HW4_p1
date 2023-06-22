@@ -1,0 +1,66 @@
+<!--
+File: index.html
+GUI Assignment: HW4 part 1
+Description: Validating an Interactive Dynamic Table with jquery  plugin
+Matthew Lorette Anaya, UMass Lowell Computer Science, Matthew_loretteanaya@student.uml.edu
+Copyright (c) 2023 by Matt. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by Matthew Lorette Anaya on June 22, 2023
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Character set defined as UTF-8 -->
+    <meta charset="utf-8">
+    
+    <!-- Title of the webpage -->
+    <title>Interactive Dynamic Multiplication Table</title>
+
+    <!-- Link to the CSS stylesheet -->
+    <link rel="stylesheet" href="css/multiplicationStyle.css">
+
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <!-- Include jQuery validation plugin -->
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    
+    <!-- Link to the JavaScript file -->
+    <script src="js/multiplicationScript.js"></script>
+  </head>
+  <body>
+    <!-- Form with id 'multiplicationForm' -->
+    <form id="multiplicationForm">
+        <!-- Fieldset for multiplier range -->
+        <fieldset>
+            <!-- Legend for multiplier range -->
+            <legend>Multiplier Range</legend>
+            
+            <!-- Label and input for minimum multiplier -->
+            <label for="multiplierMinValue">Minimum</label>
+            <input type="number" name="multiplierMinValue" required>
+        
+            <!-- Label and input for maximum multiplier -->
+            <label for="multiplierMaxValue">Maximum</label>
+            <input type="number" name="multiplierMaxValue" required>
+        </fieldset>
+        
+        <!-- Fieldset for multiplicand range -->
+        <fieldset>
+            <!-- Legend for multiplicand range -->
+            <legend>Multiplicand Range</legend>
+            
+            <!-- Label and input for minimum multiplicand -->
+            <label for="multiplicandMinValue">Minimum</label>
+            <input type="number" name="multiplicandMinValue" required>
+        
+            <!-- Label and input for maximum multiplicand -->
+            <label for="multiplicandMaxValue">Maximum</label>
+            <input type="number" name="multiplicandMaxValue" required>
+        </fieldset>
+
+        <!-- Submit button to generate the multiplication table -->
+        <input type="submit" value="Generate Multiplication Table">
+    </form>
+  </body>
+</html>
